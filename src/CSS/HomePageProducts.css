@@ -1,0 +1,31 @@
+
+#HomeProducts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin: 40px 20px 50px 20px;
+}
+
+.product{
+    border-radius: 5px;
+    background-color: #F9F5F6; 
+    position: relative;
+    height: 311px;
+
+}
+
+
+@media (max-width:990px){
+    #HomeProducts{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media (max-width:768px){
+    #HomeProducts{
+        grid-template-columns: repeat(2,1fr);
+        margin: 40px 0px 50px 0px;
+    }
+
+}
